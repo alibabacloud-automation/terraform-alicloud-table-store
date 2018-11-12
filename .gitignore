@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IDE tools
+.idea/
+terraform-alicloud-table-store.iml
+
+# terraform cache
+*/.terraform/
+.terraform/
+examples/terraform.tfstate
+examples/.terraform.tfstate.lock.info
+examples/terraform.tfstate.backup
