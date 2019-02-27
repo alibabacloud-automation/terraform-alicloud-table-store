@@ -6,10 +6,6 @@ output "this_instance_name" {
   value = "${module.ots_instance.name}"
 }
 
-output "this_vpc_id" {
-  value = "${module.ots_instance_attachment.vpc_id}"
-}
-
 output "this_vpc_name" {
   value = "${module.ots_instance_attachment.vpc_name}"
 }

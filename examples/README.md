@@ -22,7 +22,6 @@ Note that this example may create resources which cost money. Run `terraform des
 |------|-------------|
 | this_instance_id | The ID of the Instance. |
 | this_instance_name | The name of the Instance. |
-| this_vpc_id | The ID of attaching VPC to instance. |
 | this_vpc_vswitch_id | The ID of attaching VSwitch to instance. |
 | this_vpc_name | The name of attaching VPC to instance. |
 | this_table_id | The ID of the Table. The value is <instance_name>:<table_name>. |

@@ -6,7 +6,7 @@ This resource will help you to bind a VPC to an OTS instance.
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | instance_name | The name of the OTS instance. | string | - | yes |
-| ots_vpc_name | The name of attaching VPC to instance. | string | - | yes |
+| vpc_name | The name of attaching VPC to instance. | string | - | yes |
 | vswitch_id | The ID of attaching VSwitch to instance. | string | - | yes | 
 
 
@@ -18,5 +18,4 @@ This resource will help you to bind a VPC to an OTS instance.
 | instance_name | The instance name. |
 | vpc_name | The name of attaching VPC to instance. |
 | vswitch_id | The ID of attaching VSwitch to instance. |
-| vpc_id | The ID of attaching VPC to instance. |
 

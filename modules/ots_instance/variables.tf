@@ -4,7 +4,7 @@ variable "instance_name" {
 
 variable "description" {
   description = "(Required, ForceNew) The description of the instance."
-  default = "tf"
+  default     = "tf"
 }
 
 variable "accessed_by" {

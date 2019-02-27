@@ -15,17 +15,10 @@ module "ots_instance" {
 # Table Store Instance Attachment
 ######
 module "ots_instance_attachment" {
-  source = "./modules/ots_instance_attachment"
-
-  vpc_name            = "${var.vpc_name}"
-  vpc_cidr            = "${var.vpc_cidr}"
-  vpc_description     = "${var.vpc_description}"
-  vswitch_name        = "${var.vswitch_name}"
-  vswitch_cidr        = "${var.vswitch_cidr}"
-  vswitch_description = "${var.vswitch_description}"
-
+  source        = "./modules/ots_instance_attachment"
   instance_name = "${module.ots_instance.name}"
-  ots_vpc_name  = "${var.vpc_name}"
+  vpc_name      = "${var.vpc_name}"
+  vswitch_id    = "${var.vswitch_id}"
 }
 
 ######

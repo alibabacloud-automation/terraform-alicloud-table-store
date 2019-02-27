@@ -4,7 +4,7 @@
 module "tf_ots_instance" {
   source = "../modules/ots_instance"
 
-  instance_name = "tf-instance"
+  instance_name = "tf-instance2"
   description   = "tf-ots-instance"
   accessed_by   = "Any"
   instance_type = "HighPerformance"
@@ -21,15 +21,9 @@ module "tf_ots_instance" {
 module "tf_ots_instance_attachment" {
   source = "../modules/ots_instance_attachment"
 
-  vpc_name            = "tf-vpc"
-  vpc_cidr            = "172.16.0.0/16"
-  vpc_description     = "tf-vpc-descrition"
-  vswitch_name        = "tf-vswitch"
-  vswitch_cidr        = "172.16.0.0/16"
-  vswitch_description = "tf-vswitch-description"
-
   instance_name = "${module.tf_ots_instance.name}"
-  ots_vpc_name  = "otsvpc"
+  vpc_name      = "otsvpc"
+  vswitch_id    = "vrt-bp193xqwtkrqipale6qz3"
 }
 
 ######

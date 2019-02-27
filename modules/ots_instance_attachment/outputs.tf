@@ -13,7 +13,3 @@ output "vpc_name" {
 output "vswitch_id" {
   value = "${alicloud_ots_instance_attachment.this.vswitch_id}"
 }
-
-output "vpc_id" {
-  value = "${alicloud_vpc.vpc.id}"
-}
