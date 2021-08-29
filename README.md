@@ -115,7 +115,7 @@ module "ots" {
 }
 ```
 
-and then run `terraform apply` to make the defined provider effect to the existing module state.
+and then run `terraform init` and `terraform apply` to make the defined provider effect to the existing module state.
 
 More details see [How to use provider in the module](https://www.terraform.io/docs/language/modules/develop/providers.html#passing-providers-explicitly)
 

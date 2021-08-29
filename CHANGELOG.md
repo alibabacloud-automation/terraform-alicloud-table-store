@@ -2,6 +2,8 @@
 ## 1.2.0 (August 29, 2021)
 
 IMPROVEMENTS:
+
+- Update Readme [GH-6](https://github.com/terraform-alicloud-modules/terraform-alicloud-table-store/pull/6)
 - Removes the provider setting and improves the Readme [GH-5](https://github.com/terraform-alicloud-modules/terraform-alicloud-table-store/pull/5)
 
 ## 1.1.0 (February 29, 2020)
