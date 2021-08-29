@@ -10,10 +10,6 @@ terraform-alicloud-table-store
 * [OTS Instance_Attachment](https://github.com/terraform-providers/terraform-provider-alicloud/blob/master/website/docs/r/ots_instance_attachment.html.markdown)
 * [OTS Table](https://github.com/terraform-providers/terraform-provider-alicloud/blob/master/website/docs/r/ots_table.html.markdown)
 
-## Terraform 版本
-
-本 Module 要求使用 Terraform 0.12 和 阿里云 Provider 1.56.0+。
-
 ## 用法
 
 ```hcl
@@ -115,7 +111,7 @@ module "ots" {
 }
 ```
 
-定义完provider之后，运行命令 `terraform apply` 来让这个provider生效即可。
+定义完provider之后，运行命令 `terraform init` 和 `terraform apply` 来让这个provider生效即可。
 
 更多provider的使用细节，请移步[How to use provider in the module](https://www.terraform.io/docs/language/modules/develop/providers.html#passing-providers-explicitly)
 
@@ -125,22 +121,12 @@ module "ots" {
 * [基础示例](https://github.com/terraform-alicloud-modules/terraform-alicloud-table-store/tree/master/examples/basic-example)
 
 ----------------------
-## Requirements
+## Terraform 版本
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0 |
 | <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.56.0 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.56.0 |
-
-## 示例
-
-* [基础示例](https://github.com/terraform-alicloud-modules/terraform-alicloud-table-store/tree/master/examples/basic-example)
 
 提交问题
 -------
