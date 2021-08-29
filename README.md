@@ -81,7 +81,7 @@ module "ots" {
 }
 ```
 
-If you want to upgrade the module to 1.2.0 and higher in-place, you can define a provider which same region with
+If you want to upgrade the module to 1.2.0 or higher in-place, you can define a provider which same region with
 previous region:
 
 ```hcl
