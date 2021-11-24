@@ -5,6 +5,9 @@ variable "profile" {
 variable "region" {
   default = "cn-hangzhou"
 }
+variable "name" {
+  default = "terraform_test_003"
+}
 
 variable "zone_id" {
   default = "cn-hangzhou-h"
@@ -19,9 +22,10 @@ data "alicloud_vpcs" "default" {
   is_default = true
 }
 
-data "alicloud_security_groups" "default" {
-  name_regex = "default"
-  vpc_id     = data.alicloud_vpcs.default.ids.0
+resource "alicloud_vpc" "default" {
+  count = length(data.alicloud_vpcs.default.ids) > 0 ? 0 : 1
+  vpc_name = var.name
+  cidr_block = "172.16.0.0/12"
 }
 
 data "alicloud_vswitches" "default" {
@@ -36,7 +40,6 @@ resource "alicloud_vswitch" "default" {
   vpc_id            = data.alicloud_vpcs.default.ids.0
   cidr_block        = cidrsubnet(data.alicloud_vpcs.default.vpcs.0.cidr_block, 4, 15)
 }
-
 
 module "ots" {
   source        = "../../"
