@@ -1,10 +1,9 @@
 Alibaba Cloud Table Store (OTS) Terraform Module
 terraform-alicloud-table-store
-=====================================================================
 
 English | [简体中文](https://github.com/terraform-alicloud-modules/terraform-alicloud-table-store/blob/master/README-CN.md)
 
-Terraform module which creates slb http resources on Alibaba Cloud.
+Terraform module which creates set of Table Store resources including instance, instance attachment(bind vpc), table.
 
 These types of resources are supported:
 
@@ -129,7 +128,7 @@ More details see [How to use provider in the module](https://www.terraform.io/do
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
 | <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.56.0 |
 
 ## Providers
@@ -148,7 +147,7 @@ If you have any problems when using this module, please opening a [provider issu
 
 Authors
 -------
-Created and maintained by okingniko(@ZhuoranWang, okingniko@gmail.com)
+Created and maintained by Alibaba Cloud Terraform Team(terraform@alibabacloud.com)
 
 License
 ----

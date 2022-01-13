@@ -70,21 +70,21 @@ variable "tags" {
   default     = {}
 }
 
-
 # table store instance attachment variables
 variable "bind_vpc" {
   description = "Whether to create ots instance attachment. If true, the ots instance will be attached with vpc and vswitch."
   type        = bool
   default     = true
 }
-variable "vswitch_id" {
-  description = "The ID of attaching VSwitch to instance."
+
+variable "vpc_name" {
+  description = "The name of attaching VPC to instance."
   type        = string
   default     = ""
 }
 
-variable "vpc_name" {
-  description = "The name of attaching VPC to instance."
+variable "vswitch_id" {
+  description = "The ID of attaching VSwitch to instance."
   type        = string
   default     = ""
 }
@@ -122,4 +122,3 @@ variable "max_version" {
   type        = number
   default     = 1
 }
-
