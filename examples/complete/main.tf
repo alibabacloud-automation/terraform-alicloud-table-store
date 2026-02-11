@@ -1,12 +1,17 @@
+provider "alicloud" {
+  region = "cn-zhangjiakou"
+}
 data "alicloud_zones" "default" {
 }
 
 module "vpc" {
-  source             = "alibaba/vpc/alicloud"
+  source  = "alibaba/vpc/alicloud"
+  version = "v1.11.0"
+
   create             = true
   vpc_cidr           = "172.16.0.0/16"
   vswitch_cidrs      = ["172.16.0.0/21"]
-  availability_zones = [data.alicloud_zones.default.zones.0.id]
+  availability_zones = [data.alicloud_zones.default.zones[0].id]
 }
 
 #alicloud_ots_instance
