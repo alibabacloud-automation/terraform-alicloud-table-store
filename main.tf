@@ -1,5 +1,5 @@
 locals {
-  instance_name = var.use_existing_instance ? var.existing_ots_instance_name : concat(alicloud_ots_instance.this.*.name, [""])[0]
+  instance_name = var.use_existing_instance ? var.existing_ots_instance_name : concat(alicloud_ots_instance.this[*].name, [""])[0]
 }
 
 # Table Store Instance
